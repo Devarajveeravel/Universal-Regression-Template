@@ -1,0 +1,5 @@
+# [TECH TERM]: Hyperparameters
+# WHY: These are the mathematical settings for your ML model (we will use these later).
+ElasticNet:
+  alpha: 0.01  # Making it smaller allows the model to learn more detail
+  l1_ratio: 0.2

@@ -1,0 +1,7 @@
+venv/
+artifacts/
+*.pyc
+__pycache__/
+*.joblib
+.DS_Store
+*.egg-info/
