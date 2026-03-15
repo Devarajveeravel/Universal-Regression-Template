@@ -437,3 +437,259 @@ x==========x]
 [2026-03-15 11:22:44,669: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
 
 x==========x]
+[2026-03-15 11:49:28,395: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-15 11:49:28,395: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 11:49:28,404: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 11:49:28,404: INFO: common: created directory at: artifacts]
+[2026-03-15 11:49:28,404: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-15 11:49:28,404: INFO: data_ingestion: File already exists of size: ~ 23 KB]
+[2026-03-15 11:49:28,415: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-15 11:49:28,421: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-03-15 11:49:28,425: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 11:49:28,432: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 11:49:28,436: INFO: common: created directory at: artifacts]
+[2026-03-15 11:49:28,537: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-03-15 11:49:28,549: INFO: common: created directory at: artifacts/data_validation]
+[2026-03-15 11:49:28,601: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-03-15 11:49:28,602: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-03-15 11:49:28,607: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 11:49:28,611: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 11:49:28,613: INFO: common: created directory at: artifacts]
+[2026-03-15 11:49:28,615: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-15 11:49:28,652: INFO: data_transformation: Splited data into training and test sets]
+[2026-03-15 11:49:28,652: INFO: data_transformation: (1199, 12)]
+[2026-03-15 11:49:28,652: INFO: data_transformation: (400, 12)]
+[2026-03-15 11:49:28,652: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-03-15 11:49:28,652: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-03-15 11:49:28,657: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 11:49:28,657: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 11:49:28,657: INFO: common: created directory at: artifacts]
+[2026-03-15 11:49:28,657: ERROR: main: 'dict' object has no attribute 'model_trainer']
+Traceback (most recent call last):
+  File "C:\Users\devar\OneDrive\Documents\My ML Rgeression Temp 01\main.py", line 48, in <module>
+    model_trainer.main()
+  File "C:\Users\devar\OneDrive\Documents\My ML Rgeression Temp 01\src\universal_regression\pipeline\stage_04_model_trainer.py", line 11, in main
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\devar\OneDrive\Documents\My ML Rgeression Temp 01\src\universal_regression\config\configuration.py", line 71, in get_model_trainer_config
+    config = self.config.model_trainer
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'model_trainer'
+[2026-03-15 11:50:26,964: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-15 11:50:26,966: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 11:50:26,968: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 11:50:26,968: INFO: common: created directory at: artifacts]
+[2026-03-15 11:50:26,968: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-15 11:50:26,968: INFO: data_ingestion: File already exists of size: ~ 23 KB]
+[2026-03-15 11:50:26,974: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-15 11:50:26,976: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-03-15 11:50:26,980: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 11:50:26,980: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 11:50:26,987: INFO: common: created directory at: artifacts]
+[2026-03-15 11:50:26,987: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-03-15 11:50:26,987: INFO: common: created directory at: artifacts/data_validation]
+[2026-03-15 11:50:27,045: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-03-15 11:50:27,045: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-03-15 11:50:27,050: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 11:50:27,051: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 11:50:27,051: INFO: common: created directory at: artifacts]
+[2026-03-15 11:50:27,053: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-15 11:50:27,091: INFO: data_transformation: Splited data into training and test sets]
+[2026-03-15 11:50:27,095: INFO: data_transformation: (1199, 12)]
+[2026-03-15 11:50:27,096: INFO: data_transformation: (400, 12)]
+[2026-03-15 11:50:27,096: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-03-15 11:50:27,096: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-03-15 11:50:27,099: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 11:50:27,099: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 11:50:27,102: INFO: common: created directory at: artifacts]
+[2026-03-15 11:50:27,102: ERROR: main: 'ConfigurationManager' object has no attribute 'schema']
+Traceback (most recent call last):
+  File "C:\Users\devar\OneDrive\Documents\My ML Rgeression Temp 01\main.py", line 48, in <module>
+    model_trainer.main()
+  File "C:\Users\devar\OneDrive\Documents\My ML Rgeression Temp 01\src\universal_regression\pipeline\stage_04_model_trainer.py", line 11, in main
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\devar\OneDrive\Documents\My ML Rgeression Temp 01\src\universal_regression\config\configuration.py", line 74, in get_model_trainer_config
+    schema = self.schema['TARGET_COLUMN']
+             ^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'schema'
+[2026-03-15 11:51:14,557: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-15 11:51:14,567: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 11:51:14,567: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 11:51:14,567: INFO: common: created directory at: artifacts]
+[2026-03-15 11:51:14,567: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-15 11:51:14,567: INFO: data_ingestion: File already exists of size: ~ 23 KB]
+[2026-03-15 11:51:14,577: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-15 11:51:14,579: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-03-15 11:51:14,581: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 11:51:14,581: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 11:51:14,581: INFO: common: created directory at: artifacts]
+[2026-03-15 11:51:14,586: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-03-15 11:51:14,586: INFO: common: created directory at: artifacts/data_validation]
+[2026-03-15 11:51:14,641: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-03-15 11:51:14,643: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-03-15 11:51:14,643: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 11:51:14,648: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 11:51:14,648: INFO: common: created directory at: artifacts]
+[2026-03-15 11:51:14,650: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-15 11:51:14,702: INFO: data_transformation: Splited data into training and test sets]
+[2026-03-15 11:51:14,704: INFO: data_transformation: (1199, 12)]
+[2026-03-15 11:51:14,705: INFO: data_transformation: (400, 12)]
+[2026-03-15 11:51:14,705: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-03-15 11:51:14,705: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-03-15 11:51:14,709: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 11:51:14,712: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 11:51:14,713: INFO: common: created directory at: artifacts]
+[2026-03-15 11:51:14,713: ERROR: main: 'ConfigurationManager' object has no attribute 'schema']
+Traceback (most recent call last):
+  File "C:\Users\devar\OneDrive\Documents\My ML Rgeression Temp 01\main.py", line 48, in <module>
+    model_trainer.main()
+  File "C:\Users\devar\OneDrive\Documents\My ML Rgeression Temp 01\src\universal_regression\pipeline\stage_04_model_trainer.py", line 11, in main
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\devar\OneDrive\Documents\My ML Rgeression Temp 01\src\universal_regression\config\configuration.py", line 74, in get_model_trainer_config
+    schema = self.schema['TARGET_COLUMN']
+             ^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'schema'
+[2026-03-15 11:55:06,545: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-15 11:55:06,550: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 11:55:06,550: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 11:55:06,572: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-03-15 11:55:06,572: ERROR: main: 'dict' object has no attribute 'artifacts_root']
+Traceback (most recent call last):
+  File "C:\Users\devar\OneDrive\Documents\My ML Rgeression Temp 01\main.py", line 15, in <module>
+    data_ingestion.main()
+  File "C:\Users\devar\OneDrive\Documents\My ML Rgeression Temp 01\src\universal_regression\pipeline\stage_01_data_ingestion.py", line 11, in main
+    config = ConfigurationManager()
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\devar\OneDrive\Documents\My ML Rgeression Temp 01\src\universal_regression\config\configuration.py", line 26, in __init__
+    create_directories([self.config.artifacts_root])
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'artifacts_root'
+[2026-03-15 11:58:50,046: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-15 11:58:50,052: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 11:58:50,054: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 11:58:50,056: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-03-15 11:58:50,058: INFO: common: created directory at: artifacts]
+[2026-03-15 11:58:50,059: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-15 11:58:50,059: INFO: data_ingestion: File already exists of size: ~ 23 KB]
+[2026-03-15 11:58:50,071: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-15 11:58:50,071: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-03-15 11:58:50,076: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 11:58:50,076: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 11:58:50,080: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-03-15 11:58:50,080: INFO: common: created directory at: artifacts]
+[2026-03-15 11:58:50,084: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-03-15 11:58:50,086: INFO: common: created directory at: artifacts/data_validation]
+[2026-03-15 11:58:50,143: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-03-15 11:58:50,143: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-03-15 11:58:50,148: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 11:58:50,148: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 11:58:50,154: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-03-15 11:58:50,156: INFO: common: created directory at: artifacts]
+[2026-03-15 11:58:50,156: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-15 11:58:50,191: INFO: data_transformation: Splited data into training and test sets]
+[2026-03-15 11:58:50,191: INFO: data_transformation: (1199, 12)]
+[2026-03-15 11:58:50,191: INFO: data_transformation: (400, 12)]
+[2026-03-15 11:58:50,191: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-03-15 11:58:50,196: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-03-15 11:58:50,196: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 11:58:50,196: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 11:58:50,196: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-03-15 11:58:50,196: INFO: common: created directory at: artifacts]
+[2026-03-15 11:58:50,204: INFO: common: created directory at: artifacts/model_trainer]
+[2026-03-15 11:58:51,122: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2026-03-15 11:58:51,127: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2026-03-15 11:58:51,131: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 11:58:51,132: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 11:58:51,134: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-03-15 11:58:51,136: INFO: common: created directory at: artifacts]
+[2026-03-15 11:58:51,136: ERROR: main: 'ElasticNet']
+Traceback (most recent call last):
+  File "C:\Users\devar\OneDrive\Documents\My ML Rgeression Temp 01\main.py", line 59, in <module>
+    model_evaluation.main()
+  File "C:\Users\devar\OneDrive\Documents\My ML Rgeression Temp 01\src\universal_regression\pipeline\stage_05_model_evaluation.py", line 11, in main
+    model_evaluation_config = config.get_model_evaluation_config()
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\devar\OneDrive\Documents\My ML Rgeression Temp 01\src\universal_regression\config\configuration.py", line 96, in get_model_evaluation_config
+    params = self.params['ElasticNet']
+             ~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'ElasticNet'
+[2026-03-15 12:02:05,747: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-03-15 12:02:05,753: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 12:02:05,781: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 12:02:05,785: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-03-15 12:02:05,786: INFO: common: created directory at: artifacts]
+[2026-03-15 12:02:05,786: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-03-15 12:02:05,786: INFO: data_ingestion: File already exists of size: ~ 23 KB]
+[2026-03-15 12:02:05,792: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-03-15 12:02:05,793: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-03-15 12:02:05,796: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 12:02:05,796: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 12:02:05,799: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-03-15 12:02:05,799: INFO: common: created directory at: artifacts]
+[2026-03-15 12:02:05,801: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-03-15 12:02:05,803: INFO: common: created directory at: artifacts/data_validation]
+[2026-03-15 12:02:05,866: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-03-15 12:02:05,867: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-03-15 12:02:05,871: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 12:02:05,877: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 12:02:05,880: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-03-15 12:02:05,880: INFO: common: created directory at: artifacts]
+[2026-03-15 12:02:05,882: INFO: common: created directory at: artifacts/data_transformation]
+[2026-03-15 12:02:05,928: INFO: data_transformation: Splited data into training and test sets]
+[2026-03-15 12:02:05,928: INFO: data_transformation: (1199, 12)]
+[2026-03-15 12:02:05,928: INFO: data_transformation: (400, 12)]
+[2026-03-15 12:02:05,928: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-03-15 12:02:05,928: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-03-15 12:02:05,934: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 12:02:05,938: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 12:02:05,938: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-03-15 12:02:05,938: INFO: common: created directory at: artifacts]
+[2026-03-15 12:02:05,938: INFO: common: created directory at: artifacts/model_trainer]
+[2026-03-15 12:02:06,813: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2026-03-15 12:02:06,815: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2026-03-15 12:02:06,819: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-03-15 12:02:06,823: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-03-15 12:02:06,827: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-03-15 12:02:06,829: INFO: common: created directory at: artifacts]
+[2026-03-15 12:02:06,839: INFO: common: yaml file: schema.yaml loaded successfully]
+[2026-03-15 12:02:06,842: INFO: common: created directory at: artifacts/model_evaluation]
+[2026-03-15 12:02:07,019: INFO: common: json file saved at: artifacts\model_evaluation\metrics.json]
+[2026-03-15 12:02:07,022: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]

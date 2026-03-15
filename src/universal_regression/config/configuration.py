@@ -5,6 +5,9 @@ from src.universal_regression.entity import (DataIngestionConfig,
                                             DataTransformationConfig,
                                             ModelTrainerConfig,
                                             ModelEvaluationConfig)
+from src.universal_regression.constants import * # Ensure this is there
+# Add this line if it's missing:
+SCHEMA_FILE_PATH = Path("schema.yaml")
 
 # [NO-TOUCH ZONE]: Imports and Class Definition
 # WHY: This class is the "Translator." It reads the "dead" YAML text 
@@ -13,13 +16,13 @@ class ConfigurationManager:
     def __init__(
         self,
         config_filepath = CONFIG_FILE_PATH,
-        params_filepath = PARAMS_FILE_PATH):
+        params_filepath = PARAMS_FILE_PATH,
+        schema_filepath = SCHEMA_FILE_PATH): # Make sure this is here
 
-        # Read the YAML files using our Utility tool
         self.config = read_yaml(config_filepath)
         self.params = read_yaml(params_filepath)
+        self.schema = read_yaml(schema_filepath) # <--- THIS LINE IS LIKELY MISSING
 
-        # Create the 'artifacts' folder automatically
         create_directories([self.config['artifacts_root']])
 
 
@@ -68,28 +71,29 @@ class ConfigurationManager:
         return data_transformation_config
     
     def get_model_trainer_config(self) -> ModelTrainerConfig:
+        # Use brackets [] if you aren't using ConfigBox
         config = self.config['model_trainer']
-        params = self.params['ElasticNet']
-        schema =  read_yaml(Path("schema.yaml"))['TARGET_COLUMN']
+        params = self.params['RandomForest']
+        schema = self.schema['TARGET_COLUMN']
 
         create_directories([config['root_dir']])
 
         model_trainer_config = ModelTrainerConfig(
             root_dir=config['root_dir'],
-            train_data_path = config['train_data_path'],
-            test_data_path = config['test_data_path'],
+            train_data_path=config['train_data_path'],
+            test_data_path=config['test_data_path'],
             model_name = config['model_name'],
-            # CHANGE THESE TWO LINES:
-            alpha = params['alpha'],    
-            l1_ratio = params['l1_ratio'], 
-            target_column = schema['name'] # Also check if schema needs brackets!
+            n_estimators = params['n_estimators'],
+            max_depth = params['max_depth'],
+            min_samples_split = params['min_samples_split'],
+            target_column = schema['name']
         )
 
         return model_trainer_config
     
     def get_model_evaluation_config(self) -> ModelEvaluationConfig:
         config = self.config['model_evaluation']
-        params = self.params['ElasticNet']
+        params = self.params['RandomForest']
         schema =  read_yaml(Path("schema.yaml"))['TARGET_COLUMN']
 
         create_directories([config['root_dir']])

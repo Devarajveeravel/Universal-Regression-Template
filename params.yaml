@@ -1,5 +1,6 @@
 # [TECH TERM]: Hyperparameters
 # WHY: These are the mathematical settings for your ML model (we will use these later).
-ElasticNet:
-  alpha: 0.001    # Lowered from 0.01. This lets the model learn more complex patterns.
-  l1_ratio: 0.5   # Keeping a balanced mix of Lasso and Ridge.
+RandomForest:
+  n_estimators: 100
+  max_depth: 10
+  min_samples_split: 2
